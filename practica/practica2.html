@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        table, tr, td{
+            border: 1px solid gray;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        thead{
+            text-align: center;
+            font-style: unset;
+        }
+    </style>
+</head>
+<body>
+    <h3>Horario semana 4 de la Cohorte 15</h3>
+    <table>
+        <thead>
+            <tr>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miércoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <!--Colspan combina celdas en X (Horizontal)
+                        Rowspan combina celdas en Y (Vertical)
+                    -->
+                    <td rowspan="2">INTRO-WEB2</td>
+                    <td>INTRO-WEB3</td>
+                    <td>INTRO-WEB4</td>
+                    <td rowspan="2">INTRO-WEB5</td>
+                    <td rowspan="2">INTRO-WEB6</td>
+                </tr>
+                <tr>
+                    <td>EE-PW2</td>
+                    <td>EE-40Entrevistas</td>
+                </tr>
+                <tr>
+                    <td colspan="5" >Descanso</td> 
+                </tr>
+                <tr>
+                    <td rowspan="2">INTRO-WEB3</td>
+                    <td>INTRO-WEB4</td>
+                    <td rowspan="2">INTRO-WEB5</td>
+                    <td>SSM-WT</td>
+                    <td>SSM-ISE</td>
+                </tr>
+                <tr>
+                    <td>SA-EE3</td>
+                    <td>INTRO-WEB6</td>
+                    <td>BSM-CH2</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+
+</body>
+</html>
