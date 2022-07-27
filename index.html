@@ -5,51 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        thead{
-            color:green;
-        }
-
-        tbody{
-            color:blue;
-        }
-
-        tfoot{
-            color:red;
-        }
-        table, th, td{
-             border: solid black;
-        }
-    </style>
 </head>
-<body>
-    <h4>Elemento thead tbody y tfoot en una tabla</h4>
+<body
+    <h4>Contacto</h4>
+    <form action="mailto:lucia.auroravp@gmail.com"method="post" target="_blank">
+        <label for="nombre">Nombre(s)</label>
+        <input type="text" id="nombre">
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar">       
+    </form>  
+    <hr>
+    <h2>Tecnologías que conozco</h2>
     <table>
         <thead>
             <tr>
-                <th>Month</th>
-                <th>Saving</th>
+                <td>Tecnología</td>
+                <td>Conocimiento</td>
+                <td>End</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>January</td>
-                <td>$100</td>
+                <td>HTML</td>
+                <td>80%</td>
+                <td>Front-End</td>
             </tr>
             <tr>
-                <td>February</td>
-                <td>$80</td>
+                <td>CSS</td>
+                <td>40%</td>
+                <td>Front-End</td>
+            </tr>
+            <tr>
+                <td>Git</td>
+                <td>50%</td>
+                <td>Back-End</td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <td>Sum</td>
-                <td>$180</td>
-            </tr>
-        </tfoot>
     </table>
+
+    <hr>
+    <div class="redesSociales">
+        <a href="https://github.com/LucyVillasenor" target="_blank">GitHub</a>
+        <a href="https://www.facebook.com/lucy.villasenor/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/lucy_aurora/" target="_blank">Instagram</a>
+        <a href=mailto:lucia.auroravp@gmail.com>Correito</a>
+    </div>
+     
+
 </body>
 </html>
