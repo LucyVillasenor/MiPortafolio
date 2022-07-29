@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            color: red;
+        }
+
+        .title{
+            font-size: 6rem;
+        }
+
+        .subtitle{
+            font-size: 4rem;
+        }
+        /*MEDIA hace referencia al tamaño de pantalla(viewPort) del usuario
+        se usa para identificar cuando una pantalla exede siento tamaño*/
+        @media(max-width:500px) /*mientras su máximo de 500px de ancho*/{
+            body{
+                color:blue;
+            }
+        }
+        /*cuando se gira la pantalla*/
+        @media(orientation:landscape){
+
+        }
+        @media (orientation: landscape)  and (max-height: 500px) {
+            .subtitle {
+                color: yellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Tittle</h1>
+    <h2 class="subtitle">Sub tittle</h2>
+</body>
+</html>
