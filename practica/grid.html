@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display:grid;
+            background-color: cornsilk;
+            grid-template-columns: auto auto auto; /*Lo distribuye automaticamente en 3 columnas, en este caso*/
+            gap: 20px; /*define ek espacio entre cada fila/columa*/
+            /*column-gap: 40px;  Espacio entre cada columna*/
+            /* row-gap: 50px; */
+            grid-template-rows: auto auto auto;
+            /*El auto ajusta el tamaño según el contenido que tenga*/
+        }
+
+        /* De grind continer aplicar estilos a todos sus DIV que esten dentro */
+        .grid-container div{
+            text-align: center;
+            background-color: crimson;
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+</body>
+</html>
