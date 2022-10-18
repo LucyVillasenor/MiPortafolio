@@ -28,7 +28,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">LV</a>
+                <a class="navbar-brand" href="#">Lucia Aurora</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,9 @@
             </div>
         </nav>
       </div>  
-
+      <!-- <div class="container">
+        <img src="/public/images/Fondo.jpg" alt="">
+      </div> -->
 
        <!-- Container para que sea mas responsivo y mantenga espacios a los lados  -->
        <div class="container">
@@ -105,15 +107,19 @@
               
               <div class="col-6 mx-auto">
                 <div class="mb-3">
-                    <label class="form-label">Mensaje</label>
-                    <input type="text" class="form-control" id="message">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <input type="text" minlength="5" class="form-control" id="message" required>
+                    <!-- 
+                    >minlength: atributo que permite minimo 5 caracteres
+                    >required: aplica que el usuario ingrese minimo un dato para poder continuar (dato obligatorio) 
+                    >disable: solo deshabilita -->
                 </div>
               </div>
               
               <!-- CheckBox -->
               <div class="col-6 mx-auto">
                   <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                       <label class="form-check-label" for="verificacion">No enviar datos ilicitos</label>
                   </div>
                   <button type="submit" class="btn btn-primary">Enviar</button>
